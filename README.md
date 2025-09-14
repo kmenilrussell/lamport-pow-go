@@ -1,141 +1,161 @@
-# 🚀 Welcome to Z.ai Code Scaffold
-
-A modern, production-ready web application scaffold powered by cutting-edge technologies, designed to accelerate your development with [Z.ai](https://chat.z.ai)'s AI-powered coding assistance.
-
-## ✨ Technology Stack
-
-This scaffold provides a robust foundation built with:
-
-### 🎯 Core Framework
-- **⚡ Next.js 15** - The React framework for production with App Router
-- **📘 TypeScript 5** - Type-safe JavaScript for better developer experience
-- **🎨 Tailwind CSS 4** - Utility-first CSS framework for rapid UI development
-
-### 🧩 UI Components & Styling
-- **🧩 shadcn/ui** - High-quality, accessible components built on Radix UI
-- **🎯 Lucide React** - Beautiful & consistent icon library
-- **🌈 Framer Motion** - Production-ready motion library for React
-- **🎨 Next Themes** - Perfect dark mode in 2 lines of code
-
-### 📋 Forms & Validation
-- **🎣 React Hook Form** - Performant forms with easy validation
-- **✅ Zod** - TypeScript-first schema validation
-
-### 🔄 State Management & Data Fetching
-- **🐻 Zustand** - Simple, scalable state management
-- **🔄 TanStack Query** - Powerful data synchronization for React
-- **🌐 Axios** - Promise-based HTTP client
-
-### 🗄️ Database & Backend
-- **🗄️ Prisma** - Next-generation Node.js and TypeScript ORM
-- **🔐 NextAuth.js** - Complete open-source authentication solution
-
-### 🎨 Advanced UI Features
-- **📊 TanStack Table** - Headless UI for building tables and datagrids
-- **🖱️ DND Kit** - Modern drag and drop toolkit for React
-- **📊 Recharts** - Redefined chart library built with React and D3
-- **🖼️ Sharp** - High performance image processing
-
-### 🌍 Internationalization & Utilities
-- **🌍 Next Intl** - Internationalization library for Next.js
-- **📅 Date-fns** - Modern JavaScript date utility library
-- **🪝 ReactUse** - Collection of essential React hooks for modern development
-
-## 🎯 Why This Scaffold?
-
-- **🏎️ Fast Development** - Pre-configured tooling and best practices
-- **🎨 Beautiful UI** - Complete shadcn/ui component library with advanced interactions
-- **🔒 Type Safety** - Full TypeScript configuration with Zod validation
-- **📱 Responsive** - Mobile-first design principles with smooth animations
-- **🗄️ Database Ready** - Prisma ORM configured for rapid backend development
-- **🔐 Auth Included** - NextAuth.js for secure authentication flows
-- **📊 Data Visualization** - Charts, tables, and drag-and-drop functionality
-- **🌍 i18n Ready** - Multi-language support with Next Intl
-- **🚀 Production Ready** - Optimized build and deployment settings
-- **🤖 AI-Friendly** - Structured codebase perfect for AI assistance
-
-## 🚀 Quick Start
-
-```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Start production server
-npm start
-```
-
-Open [http://localhost:3000](http://localhost:3000) to see your application running.
-
-## 🤖 Powered by Z.ai
-
-This scaffold is optimized for use with [Z.ai](https://chat.z.ai) - your AI assistant for:
-
-- **💻 Code Generation** - Generate components, pages, and features instantly
-- **🎨 UI Development** - Create beautiful interfaces with AI assistance  
-- **🔧 Bug Fixing** - Identify and resolve issues with intelligent suggestions
-- **📝 Documentation** - Auto-generate comprehensive documentation
-- **🚀 Optimization** - Performance improvements and best practices
-
-Ready to build something amazing? Start chatting with Z.ai at [chat.z.ai](https://chat.z.ai) and experience the future of AI-powered development!
-
-## 📁 Project Structure
-
-```
-src/
-├── app/                 # Next.js App Router pages
-├── components/          # Reusable React components
-│   └── ui/             # shadcn/ui components
-├── hooks/              # Custom React hooks
-└── lib/                # Utility functions and configurations
-```
-
-## 🎨 Available Features & Components
-
-This scaffold includes a comprehensive set of modern web development tools:
-
-### 🧩 UI Components (shadcn/ui)
-- **Layout**: Card, Separator, Aspect Ratio, Resizable Panels
-- **Forms**: Input, Textarea, Select, Checkbox, Radio Group, Switch
-- **Feedback**: Alert, Toast (Sonner), Progress, Skeleton
-- **Navigation**: Breadcrumb, Menubar, Navigation Menu, Pagination
-- **Overlay**: Dialog, Sheet, Popover, Tooltip, Hover Card
-- **Data Display**: Badge, Avatar, Calendar
-
-### 📊 Advanced Data Features
-- **Tables**: Powerful data tables with sorting, filtering, pagination (TanStack Table)
-- **Charts**: Beautiful visualizations with Recharts
-- **Forms**: Type-safe forms with React Hook Form + Zod validation
-
-### 🎨 Interactive Features
-- **Animations**: Smooth micro-interactions with Framer Motion
-- **Drag & Drop**: Modern drag-and-drop functionality with DND Kit
-- **Theme Switching**: Built-in dark/light mode support
-
-### 🔐 Backend Integration
-- **Authentication**: Ready-to-use auth flows with NextAuth.js
-- **Database**: Type-safe database operations with Prisma
-- **API Client**: HTTP requests with Axios + TanStack Query
-- **State Management**: Simple and scalable with Zustand
-
-### 🌍 Production Features
-- **Internationalization**: Multi-language support with Next Intl
-- **Image Optimization**: Automatic image processing with Sharp
-- **Type Safety**: End-to-end TypeScript with Zod validation
-- **Essential Hooks**: 100+ useful React hooks with ReactUse for common patterns
-
-## 🤝 Get Started with Z.ai
-
-1. **Clone this scaffold** to jumpstart your project
-2. **Visit [chat.z.ai](https://chat.z.ai)** to access your AI coding assistant
-3. **Start building** with intelligent code generation and assistance
-4. **Deploy with confidence** using the production-ready setup
+Here’s a sample **README.md** for your project, *Lamport Signatures and Proof-of-Work Implementation*. You can adapt it as needed (e.g. update names, versions, etc.).
 
 ---
 
-Built with ❤️ for the developer community. Supercharged by [Z.ai](https://chat.z.ai) 🚀
+````markdown
+# Lamport Signatures & Proof-of-Work Implementation
+
+This project implements a complete Lamport signature scheme with proof-of-work functionality in Go.  
+It demonstrates the concepts of **one-way functions**, **digital signatures**, and **computational work requirements**.
+
+---
+
+## Features
+
+### Part 1: Lamport Signatures
+- **Key Generation**: Generate Lamport key pairs (private & public keys)  
+- **Signing**: Sign messages using the Lamport signature scheme  
+- **Verification**: Verify signatures using public keys  
+- **Hash-based**: Uses SHA-256 as the one-way hash function  
+
+### Part 2: Forgery Demonstration
+- **Multi-signature vulnerability**: Shows how reusing private keys allows forgery  
+- **Signature construction**: Combines revealed values from multiple signatures  
+- **Automated testing**: Includes tests that verify forgery capabilities  
+
+### Part 3: Proof-of-Work
+- **Configurable difficulty**: Adjustable number of leading zero bits required  
+- **Mining function**: Finds nonces that satisfy the difficulty requirement  
+- **Progress reporting**: Shows mining progress during computation  
+- **Integration**: Demonstrates POW alongside signature operations  
+
+---
+
+## Files
+
+| File | Purpose |
+|---|---|
+| `main.go` | Main program, CLI interface & demonstration flows |
+| `lamport.go` | Core Lamport signature implementation (key gen, sign, verify) |
+| `pow.go` | Proof-of-work functionality (mining, difficulty) |
+| `lamport_test.go` | Tests for basic signature functionality |
+| `forge_test.go` | Tests for the forgery scenario (misuse vulnerabilities) |
+| `pow_test.go` | Tests & benchmarks for proof-of‐work parts |
+
+---
+
+## Usage
+
+### Basic Signature Demonstration
+
+```bash
+go run main.go -difficulty 16
+````
+
+### Forgery Demonstration
+
+```bash
+go run main.go -forge -difficulty 16
+```
+
+### Running Tests
+
+```bash
+# Run all tests
+go test
+
+# Run specific tests
+go test -run TestLamportSignature
+go test -run TestForgery
+go test -run TestProofOfWork
+
+# Run with longer timeout (for higher POW difficulty)
+go test -timeout 30m
+```
+
+### Running Benchmarks
+
+```bash
+go test -bench=.
+go test -bench=BenchmarkProofOfWork
+```
+
+---
+
+## Command Line Options
+
+| Flag            | Description                                                                  |
+| --------------- | ---------------------------------------------------------------------------- |
+| `-difficulty N` | Sets proof-of-work difficulty (number of leading zero bits), default is `16` |
+| `-forge`        | Run forgery demonstration instead of basic signature flow                    |
+
+---
+
+## Implementation Details
+
+### Lamport Signatures
+
+* **Key Generation**: generate 256 pairs of random 32-byte values for the private key; public key = SHA-256 hashes of all private key values.
+* **Signing**:
+
+  1. Hash the message (SHA-256) → 256‐bit digest.
+  2. For each bit, reveal corresponding private key value (first or second in each pair).
+* **Verification**:
+
+  1. Hash message to get digest.
+  2. For each bit, hash the revealed signature value; compare with corresponding part of public key.
+
+### Forgery Scenario
+
+* When multiple signatures are made using the **same** Lamport key, parts of the private key are revealed in each signature.
+* By combining the revealed values from different signatures, a new forged signature can be constructed for a different message.
+* The demo ensures that the forged message contains the word `"forge"` and your name or email address.
+
+### Proof-of-Work Component
+
+* Accepts a **prefix** (e.g. derived from message or public key) and difficulty parameter `D`.
+* The mining function searches for a nonce `n` such that `SHA256(prefix || nonce)` has at least `D` leading zero bits.
+* Difficulty is configurable; higher difficulty requires more computational work.
+* Progress reporting is included to show the status while mining.
+
+---
+
+## Security Considerations
+
+* **Key Reuse**: Lamport keys are one-time signatures — reusing private key weakens security (enables forging).
+* **One-Time Signatures**: After a key/signature is used, the private key’s unrevealed parts must remain secret.
+* **Quantum Resistance**: Since it uses only hash functions, Lamport signatures are resistant to certain quantum attacks.
+* **Key & Signature Size**: Keys and signatures are large (private + public keys each \~32KB; signature \~16KB, depending on format).
+
+---
+
+## Testing
+
+* Basic tests cover the generation, signing, and verification flows.
+* Forgery tests validate that an attacker can forge with reused key induced by multiple revealed signatures.
+* POW tests include different difficulty levels and benchmark the mining performance.
+
+---
+
+## Requirements
+
+* Go version **1.21** or later
+* No external dependencies — only use the Go standard library
+
+---
+
+## License
+
+This project is for educational purposes.
+
+---
+
+*Feel free to contribute, open issues, or suggest improvements. Happy coding!*
+
+```
+
+---
+
+If you like, I can also prepare a **template project structure** (folder layout + stub files) matching this README to help you get started.
+::contentReference[oaicite:0]{index=0}
+```
