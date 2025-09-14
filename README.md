@@ -1,7 +1,5 @@
 
 
-Here's the fixed README file with corrected formatting and improved clarity:
-
 ```markdown
 # Lamport Signatures & Proof-of-Work Implementation
 
