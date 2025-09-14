@@ -1,4 +1,4 @@
-Here’s a sample **README.md** for your project, *Lamport Signatures and Proof-of-Work Implementation*. You can adapt it as needed (e.g. update names, versions, etc.).
+
 
 ---
 
@@ -144,18 +144,4 @@ go test -bench=BenchmarkProofOfWork
 
 ---
 
-## License
 
-This project is for educational purposes.
-
----
-
-*Feel free to contribute, open issues, or suggest improvements. Happy coding!*
-
-```
-
----
-
-If you like, I can also prepare a **template project structure** (folder layout + stub files) matching this README to help you get started.
-::contentReference[oaicite:0]{index=0}
-```
